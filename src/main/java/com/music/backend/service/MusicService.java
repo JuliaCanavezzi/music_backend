@@ -28,5 +28,14 @@ public class MusicService {
     public Music save (Music music) {
 		return this.repository.save(music);
 	}
+
+    public void deleteById(int id){
+        if(repository.existsById(id)){
+            repository.deleteById(id);
+        }
+        else{
+            throw new EntityNotFoundException("Musica não cadastrado");
+        }
+    }
     
 }
