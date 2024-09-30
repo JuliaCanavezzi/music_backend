@@ -14,7 +14,7 @@ public class Music {
 
     private String name;
     private String nameArtist;
-    private String realseDate;
+    private String releaseDate;
     private String musicalStyle;
     private String duration;
 
@@ -37,11 +37,11 @@ public class Music {
     public void setNameArtist(String nameArtist) {
         this.nameArtist = nameArtist;
     }
-    public String getRealseDate() {
-        return realseDate;
+    public String getReleaseDate() {
+        return releaseDate;
     }
-    public void setRealseDate(String realseDate) {
-        this.realseDate = realseDate;
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
     }
     public String getMusicalStyle() {
         return musicalStyle;
