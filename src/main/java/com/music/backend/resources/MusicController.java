@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.music.backend.entities.Music;
 import com.music.backend.service.MusicService;
@@ -18,6 +19,11 @@ public class MusicController {
     @GetMapping("musics")
         public List<Music> getAlunos(){
             return service.getMusics(); 
+        }
+
+    @GetMapping("musics/{id}")
+        public Music getAlunoById(@PathVariable int id){
+            return service.getMusicById(id); 
         }
 
     
