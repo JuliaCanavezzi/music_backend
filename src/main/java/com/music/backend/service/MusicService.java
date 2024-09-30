@@ -24,5 +24,9 @@ public class MusicService {
             () -> new EntityNotFoundException("Musica não cadastrada")
         );
     }
+
+    public Music save (Music music) {
+		return this.repository.save(music);
+	}
     
 }
